@@ -29,7 +29,6 @@
         theme: {
           extend: {
             colors: {
-              clifford: '#da373d',
                 'primary': '#ABEF5F',
                 'primary-description': '#494949',
             }
@@ -52,17 +51,36 @@
               <img class="mx-auto" src="./assets/banner.png" alt="Banner">
               <h1 class="text-3xl font-black md:leading-tight md:text-5xl">A barn house of this design  has a striking appearance</h1>
               <p class="py-6 font-medium text-primary-description">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-              <button class="btn btn-primary rounded-3xl font-extrabold w-full border-primary text-black bg-[#acef5f8e] text-lg sm:w-fit">Get Started<i class="fa-solid fa-arrow-right -rotate-45 bg-primary text-black p-2 rounded-full"></i></button>
+              <button class="btn rounded-3xl font-extrabold w-full border-primary text-black bg-[#acef5f8e] text-lg sm:w-fit lg:hover:bg-slate-200 lg:hover:border-primary">Get Started<i class="fa-solid fa-arrow-right -rotate-45 bg-primary text-black p-2 rounded-full"></i></button>
             </div>
           </div>
         </div>
     </header>
 
-    <main></main>
+    <main>
 
-    <footer></footer>
+    </main>
 
 
+      <footer class="footer footer-center bg-[#1C1C1C] text-primary-content border-t-[#F4F4F4] border-t-8 py-12 md:py-16 lg:py-20">
+        <aside class="text-white flex flex-col gap-5">
+          <div class="flex items-center gap-2">
+            <div class="bg-primary rounded-full p-1 w-fit">
+              <i class="fa-solid fa-arrow-right -rotate-45 text-black p-1 rounded-full"></i>
+            </div>
+            <h1 class="text-3xl font-black">Rinterio</h1>
+          </div>
+          <p class="text-gray-400 font-medium leading-6 md:w-3/4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          <ul class="flex flex-col gap-6 sm:flex-row sm:w-4/5 sm:justify-between sm:gap-0 sm:my-6">
+            <li class="md:hover:text-white cursor-pointer text-[#E9E9E9]"><a>Home</a></li>
+            <li class="md:hover:text-white cursor-pointer text-[#E9E9E9]"><a>Services</a></li>
+            <li class="md:hover:text-white cursor-pointer text-[#E9E9E9]"><a>Portfolio</a></li>
+            <li class="md:hover:text-white cursor-pointer text-[#E9E9E9]"><a>Blogs</a></li>
+            <li class="md:hover:text-white cursor-pointer text-[#E9E9E9]"><a>Contact Us</a></li>
+          </ul>
+          <button class="w-4/5 sm:w-fit mt-2"><a class="btn bg-primary w-full border-none rounded-3xl text-lg font-extrabold lg:hover:bg-slate-200">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-full"></i></a></button>
+        </aside>
+      </footer>
 
     <style>
         .manrope-font{
