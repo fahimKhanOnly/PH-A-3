@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+
+    <!-- TailwindCSS and DaisyUI CDNs -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <title>Rinterio</title>
+
+
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+                'primary': '#ABEF5F',
+                'primary-description': '#494949',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="manrope-font">
+
+    <header class="xl:container mx-auto">
+        <!-- Navigation section -->
+
+
+
+        <!-- Hero section -->
+        <div class="hero min-h-screen w-full">
+          <div class="hero-content text-center">
+            <div class="max-w-full sm:max-w-2xl">
+              <img class="mx-auto" src="./assets/banner.png" alt="Banner">
+              <h1 class="text-3xl font-black md:leading-tight md:text-5xl">A barn house of this design  has a striking appearance</h1>
+              <p class="py-6 font-medium text-primary-description">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+              <button class="btn btn-primary rounded-3xl font-extrabold w-full border-primary text-black bg-[#acef5f8e] text-lg sm:w-fit">Get Started<i class="fa-solid fa-arrow-right -rotate-45 bg-primary text-black p-2 rounded-full"></i></button>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+
+
+
+    <style>
+        .manrope-font{
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+</body>
+</html>
