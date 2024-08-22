@@ -31,7 +31,10 @@
             colors: {
                 'primary': '#ABEF5F',
                 'primary-description': '#494949',
-            }
+            },
+            screens: {
+              'xs': '445px',
+            },
           }
         }
       }
@@ -49,7 +52,7 @@
           <div class="hero-content text-center">
             <div class="max-w-full sm:max-w-2xl">
               <img class="mx-auto" src="./assets/banner.png" alt="Banner">
-              <h1 class="text-3xl font-black md:leading-tight md:text-5xl">A barn house of this design  has a striking appearance</h1>
+              <h1 class="inter-font text-3xl font-black md:leading-tight md:text-5xl">A barn house of this design  has a striking appearance</h1>
               <p class="py-6 font-medium text-primary-description">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
               <button class="btn rounded-3xl font-extrabold w-full border-primary text-black bg-[#acef5f8e] text-lg sm:w-fit lg:hover:bg-slate-200 lg:hover:border-primary">Get Started<i class="fa-solid fa-arrow-right -rotate-45 bg-primary text-black p-2 rounded-full"></i></button>
             </div>
@@ -59,10 +62,32 @@
 
     <main>
 
+
+      <!-- Discuss Section -->
+       <section class="bg-[url('/assets/bg.jpg')] bg-cover mb-1 sm:mx-1">
+        <div class="xl:container mx-auto px-4 flex flex-col items-center justify-center gap-4 py-10 sm:py-20">
+          <div class="bg-[#ABEF5F33] py-1 px-5 rounded-3xl flex flex-row items-center gap-1.5">
+            <i class="fa-solid fa-arrow-right"></i>
+            <p class="font-bold text-sm">Let's Connect</p>
+          </div>
+          <h1 class="inter-font text-3xl text-center font-extrabold sm:text-4xl">Let's Discuss Next Project</h1>
+          <p class="text-center font-medium text-sm leading-6 text-primary-description max-w-2xl">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          <form class="w-full grid grid-cols-1 gap-5 sm:grid-cols-2 sm:w-fit md:w-4/5 lg:max-w-[900px]">
+            <input class="rounded-3xl border-none outline-none h-[48px] pl-5" type="text" placeholder="First Name*">
+            <input class="rounded-3xl border-none outline-none h-[48px] pl-5" type="text" placeholder="Last Name*">
+            <input class="rounded-3xl border-none outline-none h-[48px] pl-5" type="number" placeholder="Phone Number*">
+            <input class="rounded-3xl border-none outline-none h-[48px] pl-5" type="email" placeholder="Email Number*">
+
+            <textarea class="rounded-3xl pt-4 pl-5 h-56 border-none outline-none sm:col-span-2" placeholder="Write your message here"></textarea>
+
+            <button class="w-full sm:col-span-2 h-11"><a class="btn bg-primary w-full border-none rounded-3xl text-lg font-extrabold lg:hover:bg-slate-200">Send Mail<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1 rounded-full"></i></a></button>
+          </form>
+        </div>
+       </section>
     </main>
 
 
-      <footer class="footer footer-center bg-[#1C1C1C] text-primary-content border-t-[#F4F4F4] border-t-8 py-12 md:py-16 lg:py-20">
+    <footer class="footer footer-center bg-[#1C1C1C] text-primary-content border-t-[#F4F4F4] border-t-8 py-12 md:py-16 lg:py-20">
         <aside class="text-white flex flex-col gap-5">
           <div class="flex items-center gap-2">
             <div class="bg-primary rounded-full p-1 w-fit">
@@ -78,14 +103,23 @@
             <li class="md:hover:text-white cursor-pointer text-[#E9E9E9]"><a>Blogs</a></li>
             <li class="md:hover:text-white cursor-pointer text-[#E9E9E9]"><a>Contact Us</a></li>
           </ul>
-          <button class="w-4/5 sm:w-fit mt-2"><a class="btn bg-primary w-full border-none rounded-3xl text-lg font-extrabold lg:hover:bg-slate-200">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-full"></i></a></button>
+          <button class="w-4/5 sm:w-fit mt-2"><a class="btn bg-primary w-full border-none rounded-3xl text-lg font-extrabold lg:hover:bg-slate-200">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1 rounded-full"></i></a></button>
         </aside>
-      </footer>
+    </footer>
 
     <style>
         .manrope-font{
             font-family: "Manrope", sans-serif;
             font-optical-sizing: auto;
+        }
+        .inter-font{
+          font-family: "Inter", sans-serif;
+        }
+        input[type="number"]::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
+        textarea{
+          resize: none;
         }
     </style>
 </body>
