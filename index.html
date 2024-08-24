@@ -34,7 +34,7 @@
             },
             screens: {
               'xs': '480px',
-              'upper-md': '900px',
+              'upper-md': '880px',
             },
           }
         }
@@ -42,14 +42,57 @@
     </script>
 </head>
 <body class="manrope-font">
-
-    <header class="xl:container mx-auto">
+    <header class="bg-[#FEFEFE]">
         <!-- Navigation section -->
+        <nav class="xl:container mx-auto pt-5 px-3 flex items-center justify-between 2xl:px-8">
+          <div class="flex w-fit items-center gap-1">
+            <div class="rounded-full flex items-center gap-1.5">
+              <i class="fa-solid fa-arrow-right -rotate-45 bg-primary text-black p-2 rounded-full"></i>
+              <a class="text-[1.8rem] font-black md:text-3xl">Rinterio</a>
+            </div>
+          </div>
 
 
+          <div class="navbar-center">
+            <ul class="hidden upper-md:flex px-1 gap-5 lg:gap-9">
+              <li><a class="cursor-pointer hover:text-black hover:font-medium duration-200">Home</a></li>
+              <li><a class="cursor-pointer hover:text-black hover:font-medium duration-200">Services</a></li>
+              <li><a class="cursor-pointer hover:text-black hover:font-medium duration-200">Portfolio</a></li>
+              <li><a class="cursor-pointer hover:text-black hover:font-medium duration-200">Blogs</a></li>
+              <li><a class="cursor-pointer hover:text-black hover:font-medium duration-200">Contact Us</a></li>
+            </ul>
+          </div>
+
+
+          <div class="flex gap-3 items-center lg:gap-8">
+            <ul class="sm:flex gap-3 lg:gap-7">
+              <li class="hidden sm:flex items-center justify-center bg-white size-10 border-gray-200 border-[1px] rounded-full"><a><i class="fa-solid fa-magnifying-glass"></i></a></li>
+              <li class="hidden sm:flex items-center justify-center bg-white size-10 border-gray-200 border-[1px] rounded-full"><a><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+
+            <a class="hidden sm:flex btn btn-sm w-40 h-10 bg-primary rounded-3xl font-extrabold">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-full"></i></a>
+            
+            <div class="dropdown dropdown-end upper-md:hidden">
+              <div tabindex="0" role="button" class="btn-ghost bg-white lg:hidden size-10 flex justify-center items-center border-gray-200 border-[1px] rounded-full">
+                <i class="fa-solid fa-bars text-lg"></i>
+              </div>
+              <ul tabindex="0" class="dropdown-content bg-base-100 space-y-2 rounded-box z-[1] mt-3 w-52 p-3 shadow justify-end">
+                <li><a class="btn btn-sm w-full">Home</a></li>
+                <li><a class="btn btn-sm w-full">Services</a></li>
+                <li><a class="btn btn-sm w-full">Portfolio</a></li>
+                <li><a class="btn btn-sm w-full">Blogs</a></li>
+                <li><a class="btn btn-sm w-full">Contact Us</a></li>
+                <li class="sm:hidden"><a class="btn btn-sm w-full"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li class="sm:hidden"><a class="btn btn-sm w-full"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+                <li class="sm:hidden"><a class="btn btn-sm bg-primary font-bold w-full">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-0.5 rounded-full"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
         <!-- Hero section -->
-        <div class="hero min-h-[75vh] w-full sm:min-h-[90vh]">
+        <div class="hero min-h-[70vh] w-full sm:min-h-[80vh]">
           <div class="hero-content text-center">
             <div class="max-w-full sm:max-w-2xl">
               <img class="mx-auto" src="./assets/banner.png" alt="Banner">
@@ -78,7 +121,6 @@
                   The barn house captivates with its blend of rustic charm and  modern sophistication, featuring weathered wood, sleek metal accents.
               </p>
 
-              <!-- Cards -->
               <div class="flex flex-col gap-y-4 sm:items-center sm:justify-center sm:gap-4 sm:flex-row md:flex-col">
                 <div class="flex flex-row gap-4 bg-white rounded-xl p-5 md:items-center lg:w-full">
                   <img class="size-10 md:size-11" src="./assets/commercial.png">
@@ -136,7 +178,6 @@
             </div>
           </div>
         </div>
-        
       </section>
 
 
@@ -174,11 +215,11 @@
           </div>
           <p class="text-gray-400 font-medium text-sm leading-6 sm:text-base md:w-3/4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
           <ul class="flex flex-col gap-6 sm:flex-row sm:w-4/5 sm:justify-between sm:gap-0 sm:my-6">
-            <li class="md:hover:text-white cursor-pointer text-[#E9E9E9]"><a>Home</a></li>
-            <li class="md:hover:text-white cursor-pointer text-[#E9E9E9]"><a>Services</a></li>
-            <li class="md:hover:text-white cursor-pointer text-[#E9E9E9]"><a>Portfolio</a></li>
-            <li class="md:hover:text-white cursor-pointer text-[#E9E9E9]"><a>Blogs</a></li>
-            <li class="md:hover:text-white cursor-pointer text-[#E9E9E9]"><a>Contact Us</a></li>
+            <li class="md:hover:text-white md:hover:font-medium duration-200 cursor-pointer text-[#E9E9E9]"><a>Home</a></li>
+            <li class="md:hover:text-white md:hover:font-medium duration-200 cursor-pointer text-[#E9E9E9]"><a>Services</a></li>
+            <li class="md:hover:text-white md:hover:font-medium duration-200 cursor-pointer text-[#E9E9E9]"><a>Portfolio</a></li>
+            <li class="md:hover:text-white md:hover:font-medium duration-200 cursor-pointer text-[#E9E9E9]"><a>Blogs</a></li>
+            <li class="md:hover:text-white md:hover:font-medium duration-200 cursor-pointer text-[#E9E9E9]"><a>Contact Us</a></li>
           </ul>
           <button class="w-4/5 sm:w-fit mt-2"><a class="btn bg-primary w-full border-none rounded-3xl text-lg font-extrabold lg:hover:bg-slate-200">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1 rounded-full"></i></a></button>
         </aside>
