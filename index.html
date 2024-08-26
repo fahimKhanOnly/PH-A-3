@@ -22,7 +22,7 @@
 
     <title>Rinterio</title>
 
-    
+
     <script>
       tailwind.config = {
         theme: {
@@ -51,7 +51,6 @@
             </div>
           </div>
 
-
           <div class="navbar-center">
             <ul class="hidden upper-md:flex px-1 gap-5 lg:gap-9">
               <li><a class="cursor-pointer hover:text-black hover:font-medium duration-200">Home</a></li>
@@ -62,11 +61,10 @@
             </ul>
           </div>
 
-
           <div class="flex gap-3 items-center lg:gap-8">
             <ul class="sm:flex gap-3 lg:gap-7">
-              <li class="hidden sm:flex items-center justify-center bg-white size-10 border-gray-200 border-[1px] rounded-full"><a><i class="fa-solid fa-magnifying-glass"></i></a></li>
-              <li class="hidden sm:flex items-center justify-center bg-white size-10 border-gray-200 border-[1px] rounded-full"><a><i class="fa-solid fa-cart-shopping"></i></a></li>
+              <li class="hidden sm:flex items-center justify-center bg-white size-10 border-gray-200 border-[1px] rounded-full cursor-pointer"><a><i class="fa-solid fa-magnifying-glass"></i></a></li>
+              <li class="hidden sm:flex items-center justify-center bg-white size-10 border-gray-200 border-[1px] rounded-full cursor-pointer"><a><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
 
             <a class="hidden sm:flex btn btn-sm w-40 h-10 bg-primary rounded-3xl font-extrabold">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-full"></i></a>
@@ -142,9 +140,64 @@
         </div>
       </section>
 
+      <!-- Recent Projects -->
+      <section class="xl:container mx-auto px-3 my-12 md:my-16">
+        <div class="flex flex-col items-center mb-5">
+          <div class="bg-[#ABEF5F33] py-1 px-5 w-fit mb-2.5 rounded-3xl flex flex-row items-center gap-1.5 md:mb-3">
+            <i class="fa-solid fa-arrow-right"></i>
+            <p class="font-bold text-sm">See our projects</p>
+          </div>
+          <h1 class="inter-font text-2xl text-center font-extrabold mb-3 sm:text-4xl">Our Recent Projects</h1>
+          <p class="text-center font-medium leading-6 text-primary-description max-w-2xl text-sm sm:text-base">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        </div>
+
+        <div class="max-w-[480px] mx-auto grid gap-5 grid-cols-1 sm:max-w-[780px] sm:grid-cols-2 sm:gap-6 xl:max-w-none xl:grid-cols-4">
+          <div class="w-full card card-compact shadow-xl">
+            <img src="./assets/project1.jpg" alt="First Project"/>
+            <div class="card-body">
+              <h2 class="text-lg font-extrabold sm:text-xl">Home with the Perfect Blend of Comfort and Style</h2>
+              <p class="font-medium text-primary-description text-sm sm:text-base">One of the standout features of this newly built home is its split layout, which ensures maximum privacy for everyone.</p>
+              <div class="card-actions justify-end mt-5">
+                <a class="text-lg cursor-pointer underline font-semibold">See More.</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full card card-compact bg-base-100 shadow-xl rounded-2xl">
+            <img src="./assets/project2.jpg" alt="Second project"/>
+            <div class="card-body">
+              <h2 class="text-lg font-extrabold sm:text-xl">New Home Construction in Bethel</h2>
+              <p class="font-medium text-primary-description text-sm sm:text-base">We're builders in Sullivan County with a focus on quality workmanship, attention to detail, and competitive pricing. Design to build to post cleanout - we do it all!</p>
+              <div class="card-actions justify-end mt-5">
+                <a class="text-lg cursor-pointer underline font-semibold">See More.</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full card card-compact bg-base-100 shadow-xl">
+            <img src="./assets/project3.jpg" alt="Third project"/>
+            <div class="card-body">
+              <h2 class="text-lg font-extrabold sm:text-xl">Kadampa Meditation Center</h2>
+              <p class="font-medium text-primary-description text-sm sm:text-base">We were honored to help enhance the tranquil site of the meditation center through our construction services. Here's a peek at the results of our collaboration with the client.</p>
+              <div class="card-actions justify-end mt-5">
+                <a class="text-lg cursor-pointer underline font-semibold">See More.</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full card card-compact bg-base-100 shadow-xl">
+            <img src="./assets/project4.png" alt="Fourth project"/>
+            <div class="card-body">
+              <h2 class="text-lg font-extrabold sm:text-xl">Serenity and Luxury at our Sparrowbush</h2>
+              <p class="font-medium text-primary-description text-sm sm:text-base">Welcome to our client's recently completed dream home nestled in the serene community of Sparrowbush, NY.</p>
+              <div class="card-actions justify-end mt-5">
+                <a class="text-lg cursor-pointer underline font-semibold">See More.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Works Process section -->
       <section class="bg-[#F2F2F2]">
-        <div class="xl:container mx-auto py-7 px-3 sm:pb-11 md:pb-20 2xl:px-16">
+        <div class="xl:container mx-auto py-10 px-3 sm:pb-11 md:pb-14 2xl:px-16">
           <div class="flex flex-col items-center">
             <div class="bg-white py-1 rounded-3xl flex w-36 mx-auto flex-row mb-4 items-center justify-center gap-1.5 md:mx-0">
               <i class="fa-solid fa-arrow-right"></i>
@@ -158,31 +211,30 @@
             <div class="p-5 bg-[#E7C1D3] rounded-2xl">
               <img src="./assets/concept.png" alt="Concept">
               <h4 class="text-lg font-extrabold my-2">Concept</h4>
-              <p class="text-primary-description xs:pr-10 upper-md:pr-0">The barn house captivates with its blend of rustic charm and modern.</p>
+              <p class="text-primary-description font-medium text-sm xs:pr-10 sm:text-base upper-md:pr-0">The barn house captivates with its blend of rustic charm and modern.</p>
             </div>
             <div class="p-5 bg-[#EFDA6E] rounded-2xl">
               <img src="./assets/flow-chart.png" alt="Flow Chart">
               <h4 class="text-lg font-extrabold my-2">Design Process</h4>
-              <p class="text-primary-description xs:pr-10 upper-md:pr-0">The barn house captivates with its blend of rustic charm and modern.</p>
+              <p class="text-primary-description font-medium text-sm xs:pr-10 sm:text-base upper-md:pr-0">The barn house captivates with its blend of rustic charm and modern.</p>
             </div>
             <div class="p-5 bg-[#A4DAC3] rounded-2xl">
               <img src="./assets/vision.png" alt="Vision">
               <h4 class="text-lg font-extrabold my-2">Supervision</h4>
-              <p class="text-primary-description xs:pr-10 upper-md:pr-0">The barn house captivates with its blend of rustic charm and modern.</p>
+              <p class="text-primary-description font-medium text-sm xs:pr-10 sm:text-base upper-md:pr-0">The barn house captivates with its blend of rustic charm and modern.</p>
             </div>
             <div class="p-5 bg-[#77AAEA] rounded-2xl">
               <img src="./assets/budget-planning.png" alt="Budget Planning">
               <h4 class="text-lg font-extrabold my-2">Budget Planning</h4>
-              <p class="text-primary-description xs:pr-10 upper-md:pr-0">The barn house captivates with its blend of rustic charm and modern.</p>
+              <p class="text-primary-description font-medium text-sm xs:pr-10 sm:text-base upper-md:pr-0">The barn house captivates with its blend of rustic charm and modern.</p>
             </div>
           </div>
         </div>
       </section>
 
-
       <!-- Portfolio Section -->
-      <section class="bg-[#F2F2F2]">
-        <div class="max-w-[480px] mx-auto px-3 py-6 sm:py-7 sm:max-w-[780px] md:pb-14 upper-md:max-w-[1255px] 2xl:max-w-[1425px]">
+      <section>
+        <div class="max-w-[480px] mx-auto px-3 py-8 sm:py-11 sm:max-w-[780px] md:pb-14 upper-md:max-w-[1255px] 2xl:max-w-[1425px]">
 
           <div class="flex flex-col items-center mb-5">
             <div class="bg-[#ABEF5F33] py-1 px-5 mb-2.5 rounded-3xl flex flex-row items-center gap-1.5 md:mb-3">
@@ -225,12 +277,10 @@
         </div>
       </section>
 
-
-
       <!-- Discuss Section -->
        <section class="bg-[url('./assets/bg.jpg')] bg-cover my-1 sm:mx-1">
         <div class="xl:container mx-auto px-4 flex flex-col items-center justify-center gap-4 py-10 sm:py-20">
-          <div class="bg-[#ABEF5F33] py-1 px-5 rounded-3xl flex flex-row items-center gap-1.5">
+          <div class="bg-[#ABEF5F33] py-1 px-5 w-fit rounded-3xl flex flex-row items-center gap-1.5">
             <i class="fa-solid fa-arrow-right"></i>
             <p class="font-bold text-sm">Let's Connect</p>
           </div>
@@ -249,7 +299,6 @@
         </div>
        </section>
     </main>
-
 
     <footer class="footer footer-center bg-[#1C1C1C] text-primary-content border-t-[#F4F4F4] border-t-8 py-12 md:py-16 lg:py-20">
         <aside class="text-white flex flex-col gap-5">
